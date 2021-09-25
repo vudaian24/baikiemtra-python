@@ -1,44 +1,20 @@
--Git: 
-+ Là tên g?i c?a m?t H? th?ng qu?n lı phiên b?n phân tán (Distributed Version Control System – DVCS) 
-+ Là m?t trong nh?ng h? th?ng qu?n lı phiên b?n phân tán ph? bi?n nh?t hi?n nay.
-+ DVCS nghia là h? th?ng giúp m?i máy tính có th? luu tr? nhi?u phiên b?n khác nhau c?a m?t mã ngu?n du?c nhân b?n (clone) t? m?t kho ch?a mã ngu?n (repository), m?i thay d?i vào mã ngu?n trên máy tính s? có th? ?y thác (commit) r?i dua lên máy ch? noi d?t kho ch?a chính.
-+ Và m?t máy tính khác (n?u h? có quy?n truy c?p) cung có th? clone l?i mã ngu?n t? kho ch?a ho?c clone l?i m?t t?p h?p các thay d?i m?i nh?t trên máy tính kia. 
-+ Trong Git, thu m?c làm vi?c trên máy tính g?i là Working Tree.
+ï»¿
+				CÃ¡c cÃ¢u lá»‡nh git
 
--$ git config --global user.name "User Name"
--$ git config --global user.email "username@gmail.com"
-+L?nh thi?t l?p ch?ng th?c cá nhân
-*Luu ı: +global du?c s? d?ng d? áp d?ng cho t?t c? các projects.
-	+N?u b?n ko s? d?ng –global thì settings s? ch? dùng cho riêng project dó.
+git init 			: Khá»Ÿi táº¡o má»™t dá»± Ã¡n git má»›i hoáº·c Ä‘Ã£ cÃ³
 
--$ git init
-+L?nh t?o m?t kho ch?a Git
-+N?u nhu b?n mu?n theo dõi m?t d? án cu trong Git, b?n c?n ? trong thu m?c c?a d? án dó.
-+L?nh này s? t?o m?t thu m?c m?i có tên .git, thu m?c này ch?a t?t c? các t?p tin c?n thi?t cho kho ch?a.
+git clone + link git 		: Copy má»™t git repository tá»« remote nguá»“n
 
--$ git clone https://github.com/user/repository.git
-+Sao chép m?t kho ch?a dã t?n t?i
-+Câu l?nh trên s? t?o m?t thu m?c m?i có tên gi?ng trên c?a Repo.
+git pull 			: Táº£i nhá»¯ng thay Ä‘á»•i cá»§a dá»± Ã¡n má»›i vá» mÃ¡y
 
--$ git checkout <name_branch>
-+Chuy?n nhánh
+git add .			: Khá»Ÿi táº¡i vÃ  táº£i lÃªn má»™t dá»± Ã¡n
 
--$ git add .
-+C?p nh?t thay d?i
-+Sau l?nh add, b?n c?n s? d?ng câu l?nh Commit d? dây thông tin thay d?i lên Local Respository:
+git status			: Kiá»ƒm tra xem tráº¡ng thÃ¡i thay Ä‘á»•i cá»§a dá»± Ã¡n táº£i lÃªn
 
--$ git commit -m "Message"
+git branch			: Táº¡o má»™t nhÃ¡nh lÃ m viá»‡c má»›i tá»« project
 
--$ git push origin <name_branch>
-+C?p nh?t lên server
-+Sau câu l?nh Commit, thông tin m?i ch? du?c c?p nh?t lên Local Repository. N?u mu?n c?p nh?t lên server thì b?n ph?i s? d?ng câu l?nh push:
+git commit			: Káº¿t há»£p vá»›i git add . Ä‘á»ƒ cho Ä‘Ã¡nh dáº¥u dá»± Ã¡n má»›i báº¡n muá»‘n lÆ°u vÃ o repo
 
--$ git push origin <name_branch>
-+N?u chua t?n t?i remote trên server thì b?n c?n ph?i add m?i m?t remote tru?c r?i m?i push:
+git remote + link dáº«n 		: Táº¡o má»™t báº£n sao tá»« nhÃ¡nh tá»« giao tiáº¿p vá»›i cÃ¡c remote khÃ¡c 
 
--$ git remote add origin <remote_url>
--$ git push origin <name_branch>
-
--$ git pull origin master
-+Pull t? remote repository
-+L?nh trên s? g?p nh?ng thay d?i m?i kéo v? t? máy ch? t? xa v?i nhánh hi?n t?i trên máy local.
+git push origin master 		: Äá»ƒ Ä‘áº©y nhá»¯ng thay Ä‘á»•i cá»¥c bá»™ lÃªn nhÃ¡nh lÃ m viá»‡c chÃ­nh
