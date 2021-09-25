@@ -1,0 +1,44 @@
+-Git: 
++ Là tên g?i c?a m?t H? th?ng qu?n lý phiên b?n phân tán (Distributed Version Control System – DVCS) 
++ Là m?t trong nh?ng h? th?ng qu?n lý phiên b?n phân tán ph? bi?n nh?t hi?n nay.
++ DVCS nghia là h? th?ng giúp m?i máy tính có th? luu tr? nhi?u phiên b?n khác nhau c?a m?t mã ngu?n du?c nhân b?n (clone) t? m?t kho ch?a mã ngu?n (repository), m?i thay d?i vào mã ngu?n trên máy tính s? có th? ?y thác (commit) r?i dua lên máy ch? noi d?t kho ch?a chính.
++ Và m?t máy tính khác (n?u h? có quy?n truy c?p) cung có th? clone l?i mã ngu?n t? kho ch?a ho?c clone l?i m?t t?p h?p các thay d?i m?i nh?t trên máy tính kia. 
++ Trong Git, thu m?c làm vi?c trên máy tính g?i là Working Tree.
+
+-$ git config --global user.name "User Name"
+-$ git config --global user.email "username@gmail.com"
++L?nh thi?t l?p ch?ng th?c cá nhân
+*Luu ý: +global du?c s? d?ng d? áp d?ng cho t?t c? các projects.
+	+N?u b?n ko s? d?ng –global thì settings s? ch? dùng cho riêng project dó.
+
+-$ git init
++L?nh t?o m?t kho ch?a Git
++N?u nhu b?n mu?n theo dõi m?t d? án cu trong Git, b?n c?n ? trong thu m?c c?a d? án dó.
++L?nh này s? t?o m?t thu m?c m?i có tên .git, thu m?c này ch?a t?t c? các t?p tin c?n thi?t cho kho ch?a.
+
+-$ git clone https://github.com/user/repository.git
++Sao chép m?t kho ch?a dã t?n t?i
++Câu l?nh trên s? t?o m?t thu m?c m?i có tên gi?ng trên c?a Repo.
+
+-$ git checkout <name_branch>
++Chuy?n nhánh
+
+-$ git add .
++C?p nh?t thay d?i
++Sau l?nh add, b?n c?n s? d?ng câu l?nh Commit d? dây thông tin thay d?i lên Local Respository:
+
+-$ git commit -m "Message"
+
+-$ git push origin <name_branch>
++C?p nh?t lên server
++Sau câu l?nh Commit, thông tin m?i ch? du?c c?p nh?t lên Local Repository. N?u mu?n c?p nh?t lên server thì b?n ph?i s? d?ng câu l?nh push:
+
+-$ git push origin <name_branch>
++N?u chua t?n t?i remote trên server thì b?n c?n ph?i add m?i m?t remote tru?c r?i m?i push:
+
+-$ git remote add origin <remote_url>
+-$ git push origin <name_branch>
+
+-$ git pull origin master
++Pull t? remote repository
++L?nh trên s? g?p nh?ng thay d?i m?i kéo v? t? máy ch? t? xa v?i nhánh hi?n t?i trên máy local.
